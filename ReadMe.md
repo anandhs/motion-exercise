@@ -20,7 +20,7 @@ Spring provides excellent support in defining middleware such as endpoints, vali
 boilerplate, yet providing hooks into being extendible. 
 
 ##### Datastore: 
-The backing datastore for this application is MongoDB, which was chose for this support for schemaless structures, which fits 
+The backing datastore for this application is MongoDB, which was chose for its support for schemaless structures, which fits 
 well with the problem description here. 
 
 ##### Validation: 
