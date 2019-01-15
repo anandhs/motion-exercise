@@ -10,6 +10,14 @@
 4. The api is now available at http://locahost:8080/products
 5. swagger-ui, which shows api documentation is available at http://locahost:8080/swagger-ui.html
 
+#### Assumptions: 
+1. Every Product has a set of base attributes that are always present. 
+2. Every product also has a set of type specific attributes, which are also mandatory. 
+3. If any field is absent, the request is rejected. 
+4. The API only allows a single product to be added at a time. 
+5. The current iteration assumes the supported product types are `coffee` and `fish`. Additional types have to be explicitly added to the list of supported types for ease. 
+6. All products are stored in a single table ( collection ) in a Mongodb database. This means that the products have to be differentiated through the presence of type specific attributes, for e.g productType=coffee for Coffee etc. . 
+
 
 #### Architecture Notes: 
 
